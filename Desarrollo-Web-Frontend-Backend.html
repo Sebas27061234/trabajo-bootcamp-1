@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.ico" />
+    
+    <title>Proyecto Bootcamp</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="font-size: 25px;"><i class="fa-solid fa-house-chimney"></i></a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSuperior" aria-controls="navbarSuperior" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSuperior">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="Sistema-de-Ventas.html">Sistema de Ventas C#</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Sistema-de-Ventas-Web.html">Sistema de Ventas Laravel</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Sistema-de-Ventas-Reserva-Hotel.html">Sistema de Ventas y Reserva Hotel</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Desarrollo-Web-Frontend-Backend.html">Desarrollo Web Frontend y Backend</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="cover d-flex justify-content-center align-items-center flex-column" style="background-image:url(../img/desarrollo_Web.jpg);">
+            <h1>Desarrollo Web Frontend y Backend</h1>
+        </div>
+    </header>
+    
+    <div class="content-wrapper tab-curso">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-col-lg-8 col-xs-12 tab-tarjeta">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Sílabo</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Detalles del Curso</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Inscripcion</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent" style="margin-top: 15px;">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><span>Silabo</span> <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</strong> Reiciendis, unde accusamus dolor hic delectus placeat cum corrupti nam veniam non id quidem quaerat distinctio quasi inventore animi adipisci fuga, repellendus quam facere eveniet ex ipsa asperiores magnam! Aspernatur assumenda sequi vero molestiae magni reprehenderit delectus reiciendis repellendus, quaerat, beatae harum.</div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><span>Detalles</span> <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Quam enim nihil nesciunt, facilis optio ullam rerum repudiandae cum perferendis alias sequi dolorem tempore officia eum aliquam cumque architecto, temporibus provident. Quibusdam temporibus rem molestias exercitationem. Sit illum blanditiis eaque, nostrum quisquam laboriosam eius maiores animi corrupti, nihil adipisci unde esse?</div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="container">
+                            <p><span>Inscripcion</span> <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Minima animi excepturi rem eius facere quos, labore error fugiat voluptates sed ut ipsa fugit consequuntur sit aliquam! Quibusdam, earum? Rem, voluptates unde? Debitis, reiciendis iusto maiores veritatis sequi ab nobis eius reprehenderit tempore molestiae eveniet id numquam qui exercitationem repellat quos.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="cambiar('Desarrollo Web Frontend y Backend')">Inscribete ya!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+                <div class="card tarjeta">
+                    <img src="img/desarrollo_Web.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollo Web Frontend y Backend con Django</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquid quas blanditiis similique tempore pariatur beatae adipisci eaque sapiente? Facilis, debitis? Magnam, omnis libero. Qui voluptas fugit neque velit cum?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Inscripción</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="inscripcion" method="get">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-envelope"></i></span>
+                                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon3"><i class="fa-solid fa-mobile-button"></i></span>
+                                <input type="text" class="form-control" placeholder="Núm Teléfono" aria-label="Núm Teléfono" aria-describedby="basic-addon3">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="curso"><i class="fa-solid fa-landmark"></i></label>
+                                <select class="form-select" id="curso">
+                                    <option selected>Seleccione un Curso</option>
+                                    <option value="Sistema de Ventas">Sistema de Ventas</option>
+                                    <option value="Sistema de Ventas Web">Sistema de Ventas Web</option>
+                                    <option value="Sistema de Ventas Java">Sistema de Ventas Java</option>
+                                    <option value="Desarrollo Web Frontend y Backend">Desarrollo Web Frontend y Backend</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-comment"></i></span>
+                                <textarea class="form-control" aria-label="Comentario" placeholder="Comentario"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container p-2" style="margin-left: 10px;">
+            <div class="d-flex justify-content-start align-items-center">
+                <a href="contacto.html"><button class="btn btn-primary btn-footer">Contactanos</button></a>
+            </div>
+        </div>
+
+        <div class="p-2 sub-footer">
+            <div class="d-flex bd-highlight">
+                <div class="p-2 bd-highlight">
+                    Todos los derechos reservados 
+                    <a class="text-white footer-link">Course - Mi Web</a>
+                    © 2021 - 2026
+                </div>
+                <div class="ms-auto p-2 bd-highlight">
+                    Desarrollado por 
+                    <a class="text-white footer-link">Course,</a>
+                    Designed by 
+                    <a class="text-white footer-link" href="https://getbootstrap.com/">Bootstrap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/53a1c2b3d1.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
